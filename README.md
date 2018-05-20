@@ -5,7 +5,6 @@ This is my personal coding interview preparation plan that I hope to follow duri
 **Time frame**: ~6 month (mid May - mid November)
 
 
-&nbsp;
 **Goal**: at least 1 offer to big tech company in Europe/US
 
 # Background
