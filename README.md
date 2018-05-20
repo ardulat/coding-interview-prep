@@ -1,12 +1,12 @@
 # Coding Interview Preparation Plan
-****
+
 This is my personal coding interview preparation plan that I hope to follow the during time frame. Many things were adopted from other interview prep guides, some were suggested by top KZ coders that I know. Everything was then customized according to my knowledge and experience. Feel free to customize it for yourself.
 
 **Time frame**: ~6 month (mid May - mid November)
 **Goal**: at least 1 offer to big tech company in Europe/US
 
 # Background
-****
+
 Plan is based on existing preparation guides:
 
   - **[Interview preparation guide bible from Sergey Makagonov]**
@@ -23,7 +23,7 @@ To stay motivated during preparation:
 
 
 # Overview
-****
+
 **The areas I know:**
    - Back-end software development - Django MVC/REST, Java Play, asynchronous Tornado
    - Machine Learning - built language models with RNNs
@@ -40,7 +40,7 @@ To stay motivated during preparation:
    - Computer Networks (especially TCP/IP) - *review the course at NU*
 
 # Plan
-****
+
 I have decided to split my plan into two phases (three months each): summer and fall phases.
 
 ## First phase: Summer Time
@@ -102,7 +102,7 @@ I have decided to split my plan into two phases (three months each): summer and 
    - Watch past interviews of people on [Glassdoor], [CareerCup] - suggested by Ulugbek Adilbekov
 
 # Extra Time
-****
+
 Everything listed here is optional. Even though it is not that realistic to dedicate time to all these, I will try doing it during rest time at leisure :smile:
 
 **Read Books:**
