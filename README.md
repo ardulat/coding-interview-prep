@@ -49,7 +49,7 @@ I have decided to split my plan into two phases (three months each): summer and 
 **Time to dedicate:**
    - 2 hrs on weekdays, 5 hours on weekends
    - 12 weeks
-   - Total: ( 2 x 5 + 5 x 2 ) x 12 = 240 hrs (*be realistic, 200 hrs will be good too :wink:*)
+   - Total: ( 2 x 5 + 5 x 2 ) x 12 = 240 hrs (*be realistic, 200 hrs will be good too*:wink:)
 
 **Objective:** solve > 200 problems on Leetcode! :sunglasses:
 
