@@ -1,8 +1,9 @@
 # Coding Interview Preparation Plan
 
-This is my personal coding interview preparation plan that I hope to follow the during time frame. Many things were adopted from other interview prep guides, some were suggested by top KZ coders that I know. Everything was then customized according to my knowledge and experience. Feel free to customize it for yourself.
+This is my personal coding interview preparation plan that I hope to follow during the time frame. Many things were adopted from other interview prep guides, some were suggested by top KZ coders that I know. Everything was then customized according to my knowledge and experience. Feel free to customize it for yourself.
 
 **Time frame**: ~6 month (mid May - mid November)
+&nbsp;
 **Goal**: at least 1 offer to big tech company in Europe/US
 
 # Background
@@ -11,21 +12,21 @@ Plan is based on existing preparation guides:
 
   - **[Interview preparation guide bible from Sergey Makagonov]**
   - [Good guide on GitHub]
-  - [Another guide on GitHub (seem to be less powerful)]
+  - [Another guide on GitHub (seems to be less powerful)]
 
 To stay motivated during preparation:
 
   - [Programeme Instagram]
   - [Tushar Roy’s YouTube Channel] - suggested by Alibek Datbayev
   - [CS Dojo's YouTube Channel]
-  - Find someone who is also preparing for interview and discuss problems together - suggested by Yerzhan Mademikhanov
+  - Find someone who is also preparing for interviews and discuss problems together - suggested by Yerzhan Mademikhanov
   - Mock interview each other - suggested by Sherzat Aitbayev
 
 
 # Overview
 
 **The areas I know:**
-   - Back-end software development - Django MVC/REST, Java Play, asynchronous Tornado
+   - Back-end software development - Django MVC/REST, asynchronous Tornado, Play for Java, JAX-RS
    - Machine Learning - built language models with RNNs
    - iOS Development - 1 year experience (long ago, probably forgot)
 
@@ -33,7 +34,7 @@ To stay motivated during preparation:
 **The areas I need to work on:**
    - **Algorithms & Data Structures (Stacks, Queues, Graphs, Trees, etc.)** - 80% of time
    - Object-Oriented Programming (in C++)
-   - System Design (Scalability uuh, cool)
+   - System Design (Scalability :smirk:)
    - Dynamic Programming
    - Computer Architecture (Cache, RAM, etc.) - *review the course at NU*
    - Operating Systems (Processes and Threads, Scheduling) - *review the course at NU*
@@ -48,26 +49,26 @@ I have decided to split my plan into two phases (three months each): summer and 
 **Time to dedicate:**
    - 2 hrs on weekdays, 5 hours on weekends
    - 12 weeks
-   - Total: ( 2 x 5 + 5 x 2 ) x 12 = 240 hrs (*be realistic, 200 hrs will be good too :D*)
+   - Total: ( 2 x 5 + 5 x 2 ) x 12 = 240 hrs (*be realistic, 200 hrs will be good too :wink:*)
 
-**Objective:** solve > 200 problems on Leetcode!
+**Objective:** solve > 200 problems on Leetcode! :sunglasses:
 
 **Programming language chosen:** C++
 
 **Areas to work on:**
    - Algorithms (e.g. sorting)
    - Data Structures (e.g. lists, stacks, queues, hash-map)
-   - Graphs (e.g. Breadth-First-Search, Depth-First-Search)
-   - Trees (e.g. binary search tree)
+   - Graphs (e.g. BFS, DFS)
+   - Trees (e.g. BST)
    - Object-Oriented Programming (in C++)
    - Dynamic Programming
    - **Mock Interviews - once a month**
    
 **Where to study:**
-   - [*Programming Challenges* by Steven Skiena] - - first 3 chapters (theory only)
+   - [*Programming Challenges* by Steven Skiena] - first 3 chapters (theory only)
    - [LeetCode] - start from easy Facebook, LinkedIn, Uber, AirBnb, then focus on middle and hard problems
    - [InterviewBit] - go for another theory from video lectures and problems
-   - [HackerRank], [Codeforces] - if time left for contests (to keep interested in solving problems)
+   - [HackerRank], [Codeforces] - if time left for contests (to keep being interested in solving problems)
    - [Codefights] - suggested by Anuar Serikov
    - [Algorithm Design Canvas] - general guides on how to solve algo problems
 
@@ -78,9 +79,9 @@ I have decided to split my plan into two phases (three months each): summer and 
 ## Second Phase: Fall Term
 
 **Time to dedicate:**
-   - TBD but less than previous phase due to studies
+   - TBD but less than previous phase due to university studies
 
-**Objective:** solve 100 more Leetcode problems!
+**Objective:** solve 100 more Leetcode problems! :sunglasses:
 
 **Areas to work on:**
    - Computer Architecture (Cache, RAM, etc.)
