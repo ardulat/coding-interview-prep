@@ -3,6 +3,8 @@
 This is my personal coding interview preparation plan that I hope to follow during the time frame. Many things were adopted from other interview prep guides, some were suggested by top KZ coders that I know. Everything was then customized according to my knowledge and experience. Feel free to customize it for yourself.
 
 **Time frame**: ~6 month (mid May - mid November)
+
+
 &nbsp;
 **Goal**: at least 1 offer to big tech company in Europe/US
 
