@@ -134,7 +134,7 @@ Everything listed here is optional. Even though it is not that realistic to dedi
 
    [Interview preparation guide bible from Sergey Makagonov]: <https://www.facebook.com/notes/sergey-makagonov/another-coding-interview-preparation-guide/10210834096793375/>
    [Good guide on GitHub]: <https://github.com/jwasham/coding-interview-university>
-   [Another guide on GitHub (seem to be less powerful)]: <https://github.com/yangshun/tech-interview-handbook>
+   [Another guide on GitHub (seems to be less powerful)]: <https://github.com/yangshun/tech-interview-handbook>
    [Programeme Instagram]: <https://www.instagram.com/programeme/>
    [Tushar Roy’s YouTube Channel]: <https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw>
    [CS Dojo's YouTube Channel]: <https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A>
