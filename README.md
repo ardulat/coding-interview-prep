@@ -20,6 +20,7 @@ To stay motivated during preparation:
   - [Programeme Instagram]
   - [Tushar Roy’s YouTube Channel] - suggested by Alibek Datbayev
   - [CS Dojo's YouTube Channel]
+  - [HackerRank's Youtube Channel]
   - Find someone who is also preparing for interviews and discuss problems together - suggested by Yerzhan Mademikhanov
   - Mock interview each other - suggested by Sherzat Aitbayev
 
@@ -162,3 +163,4 @@ Everything listed here is optional. Even though it is not that realistic to dedi
    [Python for Data Structures, Algorithms, and Interviews!]: <https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/?start=0>
    [Machine Learning]: <https://www.coursera.org/learn/machine-learning>
    [QuantLib: the free/open-source library for quantitative finance]: <https://github.com/ardulat/QuantLib>
+   [HackerRank's Youtube Channel]: <https://www.youtube.com/channel/UCOf7UPMHBjAavgD0Qw5q5ww/videos>
