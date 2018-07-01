@@ -12,6 +12,7 @@ This is my personal coding interview preparation plan that I hope to follow duri
 Plan is based on existing preparation guides:
 
   - **[Interview preparation guide bible from Sergey Makagonov]**
+  - [List of Udacity courses developed with Google]
   - [Good guide on GitHub]
   - [Another guide on GitHub (seems to be less powerful)]
 
@@ -164,3 +165,4 @@ Everything listed here is optional. Even though it is not that realistic to dedi
    [Machine Learning]: <https://www.coursera.org/learn/machine-learning>
    [QuantLib: the free/open-source library for quantitative finance]: <https://github.com/ardulat/QuantLib>
    [HackerRank's Youtube Channel]: <https://www.youtube.com/channel/UCOf7UPMHBjAavgD0Qw5q5ww/videos>
+   [List of Udacity courses developed with Google]: <https://blog.udacity.com/2018/06/udacity-launches-free-career-courses.html>
