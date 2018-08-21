@@ -1,4 +1,9 @@
-vector<int> Solution::spiralOrder(const vector<vector<int> > &A) {
+#include <cstdio>
+#include <vector>
+
+using namespace std;
+
+vector<int> spiralOrder(const vector<vector<int> > &A) {
     vector<int> result;
     
     int m = A.size();
