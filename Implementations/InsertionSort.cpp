@@ -1,19 +1,19 @@
-// Implementation of insertionSort (from Interviewbit pseudocode)
+// Implementation of insertionSort (pseudocode from Interviewbit)
 
 #include <iostream>
 
 using namespace std;
 
 void insertionSort(int *A, int n) {
-    for (int i=1; i<n; i++) {
-        int value = A[i];
-        int holeIndex = i;
+    for (int i = 1; i < n; i++) {
+        int key = A[i];
+        int j = i-1;
 
-        while(holeIndex>0 && A[holeIndex-1]>value) {
-            A[holeIndex] = A[holeIndex-1];
-            holeIndex--;
+        while (j >= 0 && A[j] > key) {
+            A[j+1] = A[j];
+            j--;
         }
-        A[holeIndex] = value;
+        A[j+1] = key;
     }
 }
 
@@ -26,6 +26,7 @@ int main() {
     for (int i=0; i<7; i++) {
         cout << A[i] << " ";
     }
+    cout << endl;
 
     return 0;
 }
