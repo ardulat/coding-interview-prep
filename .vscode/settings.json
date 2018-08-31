@@ -11,6 +11,9 @@
         "initializer_list": "cpp",
         "string": "cpp",
         "string_view": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "algorithm": "cpp",
+        "chrono": "cpp",
+        "limits": "cpp"
     }
 }
