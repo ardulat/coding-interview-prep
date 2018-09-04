@@ -14,6 +14,8 @@
         "utility": "cpp",
         "algorithm": "cpp",
         "chrono": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "__functional_03": "cpp",
+        "functional": "cpp"
     }
 }
