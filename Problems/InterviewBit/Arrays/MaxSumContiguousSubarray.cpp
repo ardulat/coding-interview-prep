@@ -1,3 +1,5 @@
+// https://www.interviewbit.com/problems/max-sum-contiguous-subarray/
+
 int Solution::maxSubArray(const vector<int> &A) {
     // Brute-force solution - O(N^2)
     // However, there is also a divide-and-conquer solution - O(NlogN)
