@@ -16,6 +16,8 @@
         "chrono": "cpp",
         "limits": "cpp",
         "__functional_03": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "deque": "cpp",
+        "list": "cpp"
     }
 }
