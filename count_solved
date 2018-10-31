@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo You solved `find . | grep Problems | grep cpp | wc -l` problems.
+echo Good job, keep on!

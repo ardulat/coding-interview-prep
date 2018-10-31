@@ -7,7 +7,29 @@ This is my personal coding interview preparation plan that I hope to follow duri
 
 **Goal**: at least 1 offer to big tech company in Europe/US
 
-# Background
+## Getting started
+
+If you would like to prepare for the coding interview, feel free to reuse this repo. I, personally, find it very useful to organize things like so and track what you have done so far.
+
+### Installing
+
+To prepare for the coding interview using this repository, fork it, and clone the forked repo to your local machine:
+
+```
+git clone https://github.com/yourusername/coding-interview-prep.git
+```
+
+### Solving problems
+
+You may want to solve problems on your own without reusing my codes. To do so, just remove everything from **Problems** directory.
+
+To count your solved problems, execute the following Shell command:
+
+```
+./count_solved
+```
+
+## Background
 
 Plan is based on existing preparation guides:
 
@@ -26,7 +48,7 @@ To stay motivated during preparation:
   - Mock interview each other - suggested by Sherzat Aitbayev
 
 
-# Overview
+## Overview
 
 **The areas I know:**
    - Back-end software development - Django MVC/REST, asynchronous Tornado, Play for Java, JAX-RS
@@ -43,11 +65,11 @@ To stay motivated during preparation:
    - Operating Systems (Processes and Threads, Scheduling) - *review the course at NU*
    - Computer Networks (especially TCP/IP) - *review the course at NU*
 
-# Plan
+## Plan
 
 I have decided to split my plan into two phases (three months each): summer and fall phases.
 
-## First phase: Summer Time
+### First phase: Summer Time
 
 **Time to dedicate:**
    - 2 hrs on weekdays, 5 hours on weekends
@@ -79,7 +101,7 @@ I have decided to split my plan into two phases (three months each): summer and 
    - Push solved problems to Github for later usage to refresh memory
 
 
-## Second Phase: Fall Term
+### Second Phase: Fall Term
 
 **Time to dedicate:**
    - TBD but less than previous phase due to university studies
@@ -105,7 +127,7 @@ I have decided to split my plan into two phases (three months each): summer and 
    - [Distributed Systems] - **highly recommended** by Alibek Datbayev
    - Watch past interviews of people on [Glassdoor], [CareerCup] - suggested by Ulugbek Adilbekov
 
-# Extra Time
+## Extra Time
 
 Everything listed here is optional. Even though it is not that realistic to dedicate time to all these, I will try doing it during rest time at leisure :smile:
 
