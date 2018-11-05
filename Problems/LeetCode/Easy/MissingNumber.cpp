@@ -1,4 +1,4 @@
-// 
+// https://leetcode.com/problems/missing-number/
 
 // Approach 1: use math
 class Solution {
