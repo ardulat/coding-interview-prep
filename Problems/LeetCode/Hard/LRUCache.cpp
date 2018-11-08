@@ -21,7 +21,7 @@ public:
     int get(int key) {
         if (mp.find(key) != mp.end()) { // key exists
             // update keyDequeue
-            keyDequeue.remove(key);
+            keyDequeue.remove(key); // <- linear time
             keyDequeue.push_front(key);
             return mp[key];
         }
@@ -38,10 +38,55 @@ public:
             }
         }
         else // just update the value
-            keyDequeue.remove(key);
+            keyDequeue.remove(key); // <- linear time
         
         keyDequeue.push_front(key);
         mp[key] = value;
+    }
+};
+
+// Better version that causes memory leak on Leetcode
+// Approach: - use O(1) erase (iterator) instead of O(n) remove
+//           - use map with pair<int, list<int>::iterator> as a value
+class LRUCache {
+private:    
+    list<int> keylist;
+    map<int,pair<int, list<int>::iterator>> mp;
+    int cache_size;
+    
+public:
+    
+    LRUCache(int capacity) {
+        keylist.clear();
+        mp.clear();
+        cache_size = capacity;
+    }
+    
+    int get(int key) {
+        if (mp.find(key) != mp.end()) { // key exists
+            // update keylist
+            keylist.erase(mp[key].second);
+            keylist.push_front(key);
+            return mp[key].first;
+        }
+        return -1;
+    }
+    
+    void put(int key, int value) {
+        if (mp.find(key) == mp.end()) {
+            if (mp.size() == cache_size) {
+                // remove last
+                int last = keylist.back();
+                keylist.pop_back();
+                mp.erase(last);
+            }
+        }
+        else // just update the value
+            // keylist.erase(mp[key].second);
+            keylist.erase(mp.find(key));
+        
+        keylist.push_front(key);
+        mp[key] = make_pair(value, keylist.begin());
     }
 };
 
@@ -51,3 +96,4 @@ public:
  * int param_1 = obj.get(key);
  * obj.put(key,value);
  */
+
