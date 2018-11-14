@@ -10,74 +10,40 @@ class Solution {
 public:
     string multiplyUtil(string num1, char num2) {
         int n = num1.size();
-        string res (n, 'x');
-        
+        string res = "";
         int carry = 0;
-        for (int i = n-1; i >= 0; i--) {
-            int digit1 = num1[i]-'0';
-            int digit2 = num2-'0';
-            int multiplication = digit1*digit2 + carry;
-            carry = multiplication / 10;
-            res[i] = (multiplication % 10) + '0';
-        }
+        int i = n-1;
         
-        if (carry > 0) {
-            string new_res (n+1, 'x');
-            new_res[0] = carry + '0';
-            for (int i = 0; i < n; i++)
-                new_res[i+1] = res[i];
-            return new_res;
+        while (i >= 0 || carry != 0) {
+            int multiplication = 0;
+            if (i >= 0)
+                multiplication += (num1[i]-'0') * (num2-'0');
+            multiplication += carry;
+            
+            res = (char) (multiplication % 10 + '0') + res;
+            
+            carry = multiplication / 10;
+            i--;
         }
         
         return res;
     }
     
     string addUtil(string num1, string num2) {
-        int n = num1.size(), m = num2.size();
-        int size = max(n, m);
-        string res (size, 'x');
-        
-        int i = n-1, j = m-1;
-        int k = size-1;
+        int size1 = num1.size(), size2 = num2.size();
+        int i = size1-1, j = size2-1;
+        string res = "";
         int carry = 0;
-        while (i > -1 && j > -1) {
-            int digit1 = num1[i]-'0';
-            int digit2 = num2[j]-'0';
-            int sum = digit1 + digit2 + carry;
+
+        while (i >= 0 || j >= 0 || carry != 0) {
+            int sum = 0;
+            if (i >= 0)
+                sum += num1[i];
+            if (j >= 0)
+                sum += num2[j];
+            sum += carry;
+            res = (char) (sum % 10) + res;
             carry = sum / 10;
-            res[k] = (sum % 10) + '0';
-            i--;
-            j--;
-            k--;
-        }
-        
-        while (i > -1) {
-            int digit1 = num1[i]-'0';
-            int sum = digit1 + carry;
-            carry = sum / 10;
-            res[k] = (sum % 10) + '0';
-            i--;
-            k--;
-        }
-        while (j > -1) {
-            int digit2 = num2[j]-'0';
-            int sum = digit2 + carry;
-            carry = sum / 10;
-            res[k] = (sum % 10) + '0';
-            j--;
-            k--;
-        }
-        
-        if (carry > 0) {
-            string new_res (size+1, 'x');
-            new_res[0] = carry + '0';
-            // copy rest of the result
-            int i = 0;
-            while (i < size) {
-                new_res[i+1] = res[i];
-                i++;
-            }
-            return new_res;
         }
         
         return res;
