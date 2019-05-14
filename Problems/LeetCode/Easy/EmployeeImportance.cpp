@@ -15,7 +15,7 @@ public:
 */
 class Solution {
 public:
-    Employee* getEmployee(vector<Employee*> employees, int id) {
+    Employee* getEmployee(vector<Employee*>& employees, int id) {
         Employee* wanted;
         for (Employee* x : employees) {
             if (x->id == id) {
