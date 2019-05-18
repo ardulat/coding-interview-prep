@@ -43,3 +43,43 @@ public:
         return result;
     }
 };
+
+
+
+// Kahn's algorithm
+class Solution {
+public:
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<int> order; // O(V) space
+        vector<vector<int>> nodes(numCourses, vector<int>()); // O(V+E) space
+        vector<int> incoming(numCourses, 0); // O(V) space
+        queue<int> processing; // O(V) space
+        int total = 0;
+        
+        for (vector<int> prereq : prerequisites) {
+            nodes[prereq[1]].push_back(prereq[0]);
+            incoming[prereq[0]]++;
+            total++;
+        }
+        
+        for (int i = 0; i < numCourses; i++)
+            if (incoming[i] == 0)
+                processing.push(i);
+        
+        while (!processing.empty()) {
+            int node = processing.front();
+            processing.pop();
+            order.push_back(node);
+            for (int adjacent : nodes[node]) {
+                incoming[adjacent]--;
+                total--;
+                if (incoming[adjacent] == 0)
+                    processing.push(adjacent);
+            }
+        }
+        
+        if (total != 0) // some edges left - cycle is present
+            return vector<int>();
+        return order;
+    }
+};
