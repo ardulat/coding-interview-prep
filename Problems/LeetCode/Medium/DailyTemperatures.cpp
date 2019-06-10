@@ -26,3 +26,26 @@ public:
     }
 };
 
+// More lightweight and optimal solution with stacks
+
+class Solution {
+public:
+    /*
+    [73, 74, 75, 71, 69, 72, 76, 73]
+    
+    */
+    vector<int> dailyTemperatures(vector<int>& T) {
+        int n = T.size();
+        vector<int> res(n, 0);
+        stack<int> ind;
+        ind.push(n-1); // res[n-1] = 0 by default
+        for (int i = n-2; i >= 0; i--) {
+            while (!ind.empty() && T[i] >= T[ind.top()])
+                ind.pop();
+            if (!ind.empty())
+                res[i] = ind.top()-i;
+            ind.push(i);
+        }
+        return res;
+    }
+};
