@@ -14,10 +14,6 @@ public:
     Algorithm 1 (easy solution): O(N) time, O(N) space
     - store nodes less than X, and greater than or equal to X in separate arrays
     - reorder the list according to the order in the arrays
-    
-    Algorithm 2: O(N) time, O(1) space
-    - traverse the array with two pointers
-    - reorder according to the first occurence of less than and greater or equal
     */
     ListNode* partition(ListNode* head, int x) {
         vector<ListNode*> left, right;
@@ -43,10 +39,31 @@ public:
 };
 
 
-
-
-
-
-
-
-
+class Solution {
+public:
+    /*
+    Algorithm 2: O(N) time, O(1) space
+    - traverse the array with two pointers
+    - reorder according to the first occurence of less than and greater or equal
+    */
+    ListNode* partition(ListNode* head, int x) {
+        // base cases
+        if (head == NULL || head->next == NULL)
+            return head;
+        ListNode *leftHead = new ListNode(0), *rightHead = new ListNode(0);
+        ListNode *left = leftHead, *right = rightHead;
+        while (head != NULL) {
+            if (head->val < x) {
+                left->next = head;
+                left = left->next;
+            } else {
+                right->next = head;
+                right = right->next;
+            }
+            head = head->next;
+        }
+        right->next = NULL;
+        left->next = rightHead->next;
+        return leftHead->next;
+    }
+};
