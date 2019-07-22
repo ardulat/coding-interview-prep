@@ -41,3 +41,39 @@ public:
         return res;
     }
 };
+
+// More concise and shorter solution with more obvious greedy implementation
+class Solution {
+public:
+    string strWithout3a3b(int A, int B) {
+        int len = A+B;
+        string res = "";
+        int originalA = A, originalB = B; // make copy of original numbers
+        if (A < B) swap(A, B); // correct later (swap all 'a' and 'b')
+        while (A > 0 || B > 0) {
+            if (A-B >= 2) {
+                res += "aa";
+                A -= 2;
+                if (B > 0) {
+                    res += 'b';
+                    B--;
+                }
+            } else {
+                res += 'a';
+                A--;
+                if (B > 0) {
+                    res += 'b';
+                    B--;
+                }
+            }
+        }
+        cout << res << endl;
+        if (originalA < originalB) {
+            for (int c = 0; c < len; c++) {
+                if (res[c] == 'a') res[c] = 'b';
+                else res[c] = 'a';
+            }
+        }
+        return res;
+    }
+};
