@@ -1,14 +1,5 @@
 // https://leetcode.com/problems/smallest-string-starting-from-leaf/
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
 class Solution {
 private:
     string smallest;
@@ -32,6 +23,30 @@ public:
     
     string smallestFromLeaf(TreeNode* root) {
         dfs(root, vector<char>());
+        return smallest;
+    }
+};
+
+// Optimized algorithm
+class Solution {
+private:
+    string smallest;
+public:
+    void dfs(TreeNode *root, string temp) {
+        if (root == NULL)
+            return;
+        temp = (char) (root->val+'a') + temp;
+        if (root->left == NULL && root->right == NULL) { // leaf node
+            if (smallest.empty() || strcmp(temp.c_str(),smallest.c_str())<0)
+                smallest = temp;
+            return;
+        }
+        dfs(root->left, temp);
+        dfs(root->right, temp);
+    }
+    
+    string smallestFromLeaf(TreeNode* root) {
+        dfs(root, "");
         return smallest;
     }
 };
