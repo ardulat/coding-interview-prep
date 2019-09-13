@@ -11,22 +11,22 @@
  */
 class Solution {
 public:
-    bool hasPathSum(TreeNode *root, int path, int& sum) {
-        path += root->val;
-        if (root->left == NULL && root->right == NULL) {
-            if (path == sum)
+    bool hasPathSum(TreeNode* root, int sum) {
+        if (root == NULL)
+            return false;
+        
+        sum = sum - root->val;
+        
+        if (root->left == NULL && root->right == NULL) { // leaf node
+            if (sum == 0)
                 return true;
         }
         else {
-            if (root->left != NULL && hasPathSum(root->left, path, sum))
+            if (hasPathSum(root->left, sum))
                 return true;
-            if (root->right != NULL && hasPathSum(root->right, path, sum))
+            if (hasPathSum(root->right, sum))
                 return true;
         }
         return false;
-    }
-    
-    bool hasPathSum(TreeNode* root, int sum) {
-        return root == NULL ? false : hasPathSum(root, 0, sum);
     }
 };
