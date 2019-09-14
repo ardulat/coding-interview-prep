@@ -37,3 +37,24 @@ public:
         return res;
     }
 };
+
+
+// Optimized solution
+class Solution {
+public:
+    int subarraySum(vector<int>& nums, int k) {
+        int runningTotal = 0;
+        unordered_map<int,int> seen;
+        int count = 0;
+        
+        for (int num : nums) {
+            seen[runningTotal]++;
+            
+            runningTotal += num;
+            
+            count += seen[runningTotal-k];
+        }
+        
+        return count;
+    }
+};
