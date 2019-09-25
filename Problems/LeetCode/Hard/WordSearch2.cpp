@@ -24,7 +24,7 @@ private:
     
     void dfs(vector<vector<char>>& board, int i, int j, TrieNode *parent, vector<string>& res) {
         if (i >= 0 && i < board.size() && j >= 0 && j < board[0].size()) {
-            // cout << ch << endl;
+            char ch = board[i][j];
             
             TrieNode *temp = parent;
             // there is no such prefix/word
