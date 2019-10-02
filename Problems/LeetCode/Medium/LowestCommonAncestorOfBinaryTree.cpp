@@ -30,7 +30,7 @@ public:
         return false;
     }
     
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    TreeNode* CommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         vector<TreeNode*> path2p, path2q; // path to p, path to q
         
         findPath(root, p, path2p);
